@@ -72,9 +72,9 @@ class ViewController: UIViewController {
             
                 imageView.image = imageArray[nowIndex]
             }
-        }
-                           
-        func imageViewTapped(_ sender: UITapGestureRecognizer) {
-             print("タップ")
-        }
     
+    @IBAction func tapAction(_ sender: Any) {
+    
+    }
+    
+}
