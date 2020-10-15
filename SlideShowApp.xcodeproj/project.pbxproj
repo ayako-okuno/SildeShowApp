@@ -14,9 +14,9 @@
 		12944819253693AF0015F51A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12944818253693AF0015F51A /* Assets.xcassets */; };
 		1294481C253693AF0015F51A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1294481A253693AF0015F51A /* LaunchScreen.storyboard */; };
 		12944824253695AB0015F51A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12944823253695AB0015F51A /* ResultViewController.swift */; };
-		1294482625369C5E0015F51A /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1294482525369C5A0015F51A /* dog1.png */; };
-		1294482825369C960015F51A /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1294482725369C8F0015F51A /* dog2.png */; };
-		1294482A25369CAE0015F51A /* dog3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1294482925369CAA0015F51A /* dog3.png */; };
+		1294483725381DA90015F51A /* dog1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1294483525381DA00015F51A /* dog1.png */; };
+		1294483825381DA90015F51A /* dog2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1294483625381DA90015F51A /* dog2.png */; };
+		1294483A25381DBF0015F51A /* dog3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1294483925381DBF0015F51A /* dog3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		1294481B253693AF0015F51A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1294481D253693B10015F51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12944823253695AB0015F51A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		1294482525369C5A0015F51A /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
-		1294482725369C8F0015F51A /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
-		1294482925369CAA0015F51A /* dog3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog3.png; sourceTree = "<group>"; };
+		1294483525381DA00015F51A /* dog1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog1.png; sourceTree = "<group>"; };
+		1294483625381DA90015F51A /* dog2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog2.png; sourceTree = "<group>"; };
+		1294483925381DBF0015F51A /* dog3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +69,9 @@
 				12944813253693A10015F51A /* ViewController.swift */,
 				12944823253695AB0015F51A /* ResultViewController.swift */,
 				12944815253693A20015F51A /* Main.storyboard */,
-				1294482525369C5A0015F51A /* dog1.png */,
-				1294482725369C8F0015F51A /* dog2.png */,
-				1294482925369CAA0015F51A /* dog3.png */,
+				1294483525381DA00015F51A /* dog1.png */,
+				1294483625381DA90015F51A /* dog2.png */,
+				1294483925381DBF0015F51A /* dog3.png */,
 				12944818253693AF0015F51A /* Assets.xcassets */,
 				1294481A253693AF0015F51A /* LaunchScreen.storyboard */,
 				1294481D253693B10015F51A /* Info.plist */,
@@ -138,10 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1294481C253693AF0015F51A /* LaunchScreen.storyboard in Resources */,
-				1294482825369C960015F51A /* dog2.png in Resources */,
-				1294482A25369CAE0015F51A /* dog3.png in Resources */,
+				1294483825381DA90015F51A /* dog2.png in Resources */,
+				1294483A25381DBF0015F51A /* dog3.png in Resources */,
 				12944819253693AF0015F51A /* Assets.xcassets in Resources */,
-				1294482625369C5E0015F51A /* dog1.png in Resources */,
+				1294483725381DA90015F51A /* dog1.png in Resources */,
 				12944817253693A20015F51A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
