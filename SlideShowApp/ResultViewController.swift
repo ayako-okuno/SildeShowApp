@@ -10,53 +10,57 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    @IBOutlet weak var imageView2: UIImageView!
+    var imageView2:UIImageView!
+    var backButton:UIButton!
     
-    private let maxZoomScale: CGFloat = 4.0
-
-     private var imageView: UIImageView = {
-        let image = UIImage(named: "dog1")!
-        let imageView = UIImageView(image: image)
+    var nowIndex:Int = 0
+    var scale:CGFloat = 1.0
+    var width:CGFloat = 0
+    var height:CGFloat = 0
+    var screenWidth:CGFloat = 0
+    var screenHeight:CGFloat = 0
         
-        imageView.contentMode = .scaleAspectFit
-        return imageView
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       adjustImageViewSize()
-          }
-          
-              private func adjustImageViewSize() {
-              guard let size = imageView.image?.size, imageView.frame.isEmpty else { return }
-              let wRate = imageView.bounds.width / size.width
-              let hRate = imageView.bounds.height / size.height
-              let rate = min(wRate, hRate, 1)
-              imageView.frame.size = CGSize(width: size.width * rate, height: size.height * rate)
-          }
-
-          func viewForZooming(in imageView: UIImageView) -> UIView? {
-              return imageView
-          }
-          
-          private func zoomRect(for imageView: UIImageView, scale: CGFloat, center: CGPoint) -> CGRect {
-              let size = CGSize(
-                  width: imageView.frame.width / scale,
-                  height: imageView.frame.height / scale
-              )
-              let rect = CGRect(
-                  origin: CGPoint(
-                      x: center.x - size.width / 2.0,
-                      y: center.y - size.height / 2.0
-                  ),
-                  size: size
-              )
-              return rect
-              
-              }
-      
+        
+            screenWidth = self.view.bounds.width
+            screenHeight = self.view.bounds.height
+            
+            let image = UIImage(named:"dog1")!
+            
+            width = image.size.width
+            height = image.size.height
+            
+            imageView2 = UIImageView(image:image)
+            
+            scale = screenWidth / width
+            let rect:CGRect = CGRect(x:20, y:30, width:374, height:561)
+            
+            imageView2.frame = rect;
+            imageView2.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
+            
+            self.view.addSubview(imageView2)
+    
+            if(374 < screenWidth*2 ){
+                scale += 0.2
+            }
+        
+            if(561 < screenHeight*2 ){
+                           scale += 0.2
+            }
+        
+            imageView2.frame = rect;
+            imageView2.center = CGPoint(x:screenWidth/2, y:screenHeight/2)
+            self.view.addSubview(imageView2)
+        
+            }
+    
         @IBAction func backButton(_ sender: Any) {
+            backButton.setTitle("戻る", for: .normal)
+            nowIndex = 0
+            if nowIndex == 0 {
+            self.performSegue(withIdentifier: "toFirst", sender: self)
+                
         }
-          
     }
+}

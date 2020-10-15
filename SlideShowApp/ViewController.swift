@@ -34,16 +34,33 @@ class ViewController: UIViewController {
     
     }
 
+    let imageName = ["dog1", "dog2", "dog3"]
+    var changeImgNo = 0
+    
     @IBAction func goButton(_ sender: Any) {
-         dispImageNo += 1
-        
-         goButton.setTitle("進む", for: .normal)
+          if changeImgNo == 0 {
+             changeImgNo = 1
+                } else if changeImgNo == 1 {
+                    changeImgNo = 2
+                } else if changeImgNo == 2 {
+                    changeImgNo = 0
+                }
+                let name = imageName[changeImgNo]
+                imageView.image = UIImage(named: name)
+          goButton.setTitle("進む", for: .normal)
     }
     
     @IBAction func backButton(_ sender: Any) {
-         dispImageNo -= 1
-        
-        backButton.setTitle("戻る", for: .normal)
+          if changeImgNo == 1 {
+                     changeImgNo = 0
+                        } else if changeImgNo == 2 {
+                            changeImgNo = 1
+                        } else if changeImgNo == 0 {
+                            changeImgNo = 2
+                        }
+                        let name = imageName[changeImgNo]
+                        imageView.image = UIImage(named: name)
+         backButton.setTitle("戻る", for: .normal)
     }
     
     @IBAction func slideShowButton(_ sender: Any) {
@@ -74,7 +91,10 @@ class ViewController: UIViewController {
             }
     
     @IBAction func tapAction(_ sender: Any) {
-    
+                nowIndex = 0
+                if nowIndex == 0 {
+                self.performSegue(withIdentifier: "toSecond", sender: self)
+            
+            }
+        }
     }
-    
-}
