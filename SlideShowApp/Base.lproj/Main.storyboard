@@ -88,23 +88,18 @@
             <objects>
                 <viewController id="lq9-ED-MO9" customClass="ResultViewController" customModule="SlideShowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJD-uQ-xiX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y8C-UI-PK1">
-                                <rect key="frame" x="20" y="50" width="374" height="374"/>
+                                <rect key="frame" x="32" y="32" width="350" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="8ap-o4-f0a"/>
-                                    <constraint firstAttribute="height" constant="374" id="FgI-wR-gPW"/>
+                                    <constraint firstAttribute="width" constant="350" id="50j-wE-NaG"/>
+                                    <constraint firstAttribute="height" constant="350" id="QSO-P2-heP"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="11Z-Xc-A2l"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-Ng-CMn" userLabel="backButton">
-                                <rect key="frame" x="191" y="541" width="32" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="32" id="4c6-7K-oG5"/>
-                                    <constraint firstAttribute="height" constant="30" id="DdU-V0-pyF"/>
-                                </constraints>
+                                <rect key="frame" x="191" y="478" width="32" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="lrc-sJ-sJ5"/>
@@ -113,15 +108,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="E0E-Ng-CMn" firstAttribute="leading" secondItem="WTC-bd-LE0" secondAttribute="leading" constant="191" id="57v-JJ-Dvg"/>
-                            <constraint firstItem="E0E-Ng-CMn" firstAttribute="leading" secondItem="WTC-bd-LE0" secondAttribute="leading" constant="191" id="86X-Dj-RRE"/>
-                            <constraint firstItem="WTC-bd-LE0" firstAttribute="bottom" secondItem="E0E-Ng-CMn" secondAttribute="bottom" constant="291" id="AyF-3W-H1D"/>
-                            <constraint firstItem="Y8C-UI-PK1" firstAttribute="top" secondItem="WTC-bd-LE0" secondAttribute="top" constant="50" id="Mew-i5-kfn"/>
-                            <constraint firstItem="Y8C-UI-PK1" firstAttribute="leading" secondItem="WTC-bd-LE0" secondAttribute="leading" constant="20" id="MsE-O6-How"/>
-                            <constraint firstItem="WTC-bd-LE0" firstAttribute="trailing" secondItem="Y8C-UI-PK1" secondAttribute="trailing" constant="20" id="RM4-9H-V96"/>
-                            <constraint firstItem="E0E-Ng-CMn" firstAttribute="top" secondItem="Y8C-UI-PK1" secondAttribute="bottom" constant="117" id="SGL-S6-8fF"/>
-                            <constraint firstItem="WTC-bd-LE0" firstAttribute="bottom" secondItem="E0E-Ng-CMn" secondAttribute="bottom" constant="291" id="hPN-j1-f7W"/>
-                            <constraint firstItem="WTC-bd-LE0" firstAttribute="trailing" secondItem="E0E-Ng-CMn" secondAttribute="trailing" constant="191" id="zFI-Xs-r2O"/>
+                            <constraint firstItem="WTC-bd-LE0" firstAttribute="trailing" secondItem="Y8C-UI-PK1" secondAttribute="trailing" constant="32" id="QGE-jh-isd"/>
+                            <constraint firstItem="E0E-Ng-CMn" firstAttribute="top" secondItem="Y8C-UI-PK1" secondAttribute="bottom" constant="96" id="bM8-zU-dz3"/>
+                            <constraint firstItem="E0E-Ng-CMn" firstAttribute="centerX" secondItem="YJD-uQ-xiX" secondAttribute="centerX" id="bfH-xC-DSE"/>
+                            <constraint firstItem="Y8C-UI-PK1" firstAttribute="top" secondItem="WTC-bd-LE0" secondAttribute="top" constant="32" id="qrj-j9-yVs"/>
+                            <constraint firstItem="Y8C-UI-PK1" firstAttribute="leading" secondItem="WTC-bd-LE0" secondAttribute="leading" constant="32" id="wRz-iC-HaY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WTC-bd-LE0"/>
                     </view>
