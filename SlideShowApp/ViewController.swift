@@ -69,13 +69,21 @@ class ViewController: UIViewController {
            timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
     
             slideShowButton.setTitle("停止", for: .normal)
-    
+            
+            goButton.isEnabled = false
+            
+            backButton.isEnabled = false
+            
            } else {
                   
             timer.invalidate()
             timer = nil
             
            slideShowButton.setTitle("再生", for: .normal)
+        
+            goButton.isEnabled = true
+            
+            backButton.isEnabled = true
                 
             }
         }
@@ -91,10 +99,13 @@ class ViewController: UIViewController {
             }
     
     @IBAction func tapAction(_ sender: Any) {
-                nowIndex = 0
-                if nowIndex == 0 {
-                self.performSegue(withIdentifier: "toSecond", sender: self)
+        
+        nowIndex = 0
+        if nowIndex == 0 {
+        self.performSegue(withIdentifier: "toSecond", sender: self)
             
-            }
-        }
     }
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
+  }
+}

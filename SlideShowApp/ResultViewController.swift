@@ -17,7 +17,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
           
           }
-          @IBAction func Button(_ sender: UIButton) {
+    @IBAction func Button(_ sender: UIButton) {
           self.performSegue(withIdentifier: "toFirst", sender: nil)
           }
           
