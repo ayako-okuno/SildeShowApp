@@ -99,13 +99,18 @@ class ViewController: UIViewController {
             }
     
     @IBAction func tapAction(_ sender: Any) {
-        
         nowIndex = 0
         if nowIndex == 0 {
         self.performSegue(withIdentifier: "toSecond", sender: self)
             
+            } else {
+                  
+            timer.invalidate()
+            timer = nil
+    }
+        
     }
     @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
   }
-}
+
